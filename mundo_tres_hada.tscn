@@ -1,0 +1,355 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://mundo_tres_hada.png" type="Texture" id=1]
+[ext_resource path="res://hada_nana.png" type="Texture" id=2]
+[ext_resource path="res://mundo_tres_hada.gd" type="Script" id=3]
+[ext_resource path="res://win.wav" type="AudioStream" id=4]
+[ext_resource path="res://lose.wav" type="AudioStream" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0745098, 0.533333, 0.188235, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.00784314, 0.760784, 0.192157, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.00784314, 0.760784, 0.192157, 1 )
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.117647, 0.631373, 0.192157, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.529412, 0.517647, 0.0352941, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.529412, 0.517647, 0.0352941, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.529412, 0.517647, 0.0352941, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.117647, 0.631373, 0.192157, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.529412, 0.517647, 0.0352941, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.0431373, 0.980392, 0.254902, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.0431373, 0.980392, 0.254902, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 1, 0, 0, 1 )
+
+[node name="mundo_tres_hada" type="Sprite"]
+position = Vector2( 506.796, 312.442 )
+scale = Vector2( 0.945457, 0.931268 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="hada_nana" type="Sprite" parent="."]
+position = Vector2( -777.023, -502.409 )
+texture = ExtResource( 2 )
+offset = Vector2( 1160.07, 358.194 )
+
+[node name="BtnIniciar" type="Button" parent="."]
+margin_left = 351.354
+margin_top = -34.1188
+margin_right = 413.354
+margin_bottom = 4.8812
+rect_scale = Vector2( 1.47463, 1.47463 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+text = "INICIAR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = -411.226
+margin_top = -162.619
+margin_right = -166.226
+margin_bottom = -91.6191
+rect_scale = Vector2( 1.2089, 1.2089 )
+custom_colors/font_color = Color( 0.109804, 0.0941176, 0.0941176, 1 )
+custom_colors/background_color = Color( 0.913725, 0.870588, 0.0705882, 1 )
+custom_colors/font_color_readonly = Color( 0, 0, 0, 1 )
+text = "SON RAMAS DEL PODER PÚBLICO, LA LEGISLATIVA, LA EJECUTIVA Y LA JUDICIAL."
+readonly = true
+syntax_highlighting = true
+fold_gutter = true
+wrap_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+margin_left = -305.457
+margin_top = -64.9029
+margin_right = -60.4565
+margin_bottom = 32.0971
+rect_scale = Vector2( 1.30818, 1.14058 )
+rect_pivot_offset = Vector2( -432.783, -324.915 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/background_color = Color( 0.0431373, 0.0862745, 0.611765, 1 )
+custom_colors/font_color_readonly = Color( 0, 0, 0, 1 )
+text = "EL CONGRESO DE LA REPÚBLICA ESTARÁ INTEGRADO POR EL SENADO Y LA CÁMARA DE REPRESENTANTES."
+readonly = true
+syntax_highlighting = true
+fold_gutter = true
+wrap_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit3" type="TextEdit" parent="."]
+margin_left = 1.27347
+margin_top = 112.275
+margin_right = 376.273
+margin_bottom = 178.275
+rect_scale = Vector2( 1.06242, 1.15604 )
+rect_pivot_offset = Vector2( -432.783, -324.915 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/background_color = Color( 0.654902, 0.0666667, 0.0666667, 1 )
+custom_colors/font_color_readonly = Color( 0, 0, 0, 1 )
+text = "EL PRESIDENTE DE LA REPÚBLICA ES JEFE DEL ESTADO, JEFE DEL GOBIERNO Y SUPREMA AUTORIDAD ADMINISTRATIVA"
+readonly = true
+syntax_highlighting = true
+fold_gutter = true
+wrap_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pregunta1" type="Button" parent="."]
+visible = false
+margin_left = -521.709
+margin_top = -203.035
+margin_right = -177.709
+margin_bottom = -175.035
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_styles/disabled = SubResource( 4 )
+disabled = true
+text = "Las tres 3 ramas de poder público en Colombia son "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta11" type="Button" parent="."]
+visible = false
+margin_left = -507.248
+margin_top = -143.521
+margin_right = -402.248
+margin_bottom = -123.521
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 5 )
+text = "Legislativa, Ejecutiva y Judicial"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta12" type="Button" parent="."]
+visible = false
+margin_left = -183.99
+margin_top = -147.704
+margin_right = 26.0099
+margin_bottom = -127.704
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 6 )
+text = "Iglesia, Monasterio y académico "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta13" type="Button" parent="."]
+visible = false
+margin_left = -504.989
+margin_top = -89.001
+margin_right = -311.989
+margin_bottom = -69.001
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 7 )
+text = "Bibliotecas, Educativo y Reyes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta14" type="Button" parent="."]
+visible = false
+margin_left = -175.442
+margin_top = -92.8319
+margin_right = 17.5581
+margin_bottom = -72.8319
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 7 )
+text = "Ninguna de las anteriores"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pregunta2" type="Button" parent="."]
+visible = false
+margin_left = -142.555
+margin_top = -15.5072
+margin_right = 176.445
+margin_bottom = 21.4928
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_styles/disabled = SubResource( 8 )
+disabled = true
+text = "El congreso de la república esta integrado por"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta21" type="Button" parent="."]
+visible = false
+margin_left = -121.682
+margin_top = 54.0912
+margin_right = 70.3181
+margin_bottom = 74.0912
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 9 )
+text = "Policías, bomberos y médicos"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta22" type="Button" parent="."]
+visible = false
+margin_left = 197.802
+margin_top = 52.8142
+margin_right = 390.802
+margin_bottom = 72.8142
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 9 )
+text = "Profesores y padres de familia"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta23" type="Button" parent="."]
+visible = false
+margin_left = -110.362
+margin_top = 107.724
+margin_right = 82.6385
+margin_bottom = 127.724
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 9 )
+text = "Senado y Cámara de representantes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Respuesta24" type="Button" parent="."]
+visible = false
+margin_left = 235.414
+margin_top = 109.446
+margin_right = 424.414
+margin_bottom = 129.446
+rect_scale = Vector2( 1.44835, 1.44835 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 9 )
+text = "Ninguna de las anteriores"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Heroe" type="Sprite" parent="."]
+position = Vector2( -450.255, 121.701 )
+
+[node name="Demonio" type="Sprite" parent="."]
+position = Vector2( 448.352, -146.454 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 51.0957
+margin_top = 162.642
+margin_right = 275.095
+margin_bottom = 202.642
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+margin_left = 74.4728
+margin_top = 227.162
+margin_right = 146.473
+margin_bottom = 267.162
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "DEMONIO"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VidaHeroe" type="ProgressBar" parent="."]
+visible = false
+margin_left = 149.0
+margin_top = 161.0
+margin_right = 360.0
+margin_bottom = 194.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/fg = SubResource( 10 )
+custom_styles/bg = SubResource( 11 )
+value = 100.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VidaDemonio" type="ProgressBar" parent="."]
+visible = false
+margin_left = 147.104
+margin_top = 207.459
+margin_right = 358.104
+margin_bottom = 240.459
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/fg = SubResource( 12 )
+custom_styles/bg = SubResource( 13 )
+value = 100.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerWin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="PlayerLose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )

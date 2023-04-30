@@ -1,0 +1,106 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fondo_seleccion_heroes.png" type="Texture" id=1]
+[ext_resource path="res://carga_heroes.gd" type="Script" id=2]
+
+[node name="seleccion_heroe" type="Sprite"]
+position = Vector2( 512.49, 332.385 )
+scale = Vector2( 1.08233, 1.08233 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 267.285
+margin_top = -277.767
+margin_right = 307.285
+margin_bottom = -237.767
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureButton"]
+margin_left = -181.091
+margin_top = 167.387
+margin_right = -97.0914
+margin_bottom = 181.387
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+margin_left = -251.009
+margin_top = 24.9854
+margin_right = -211.009
+margin_bottom = 64.9854
+rect_rotation = -17.0242
+rect_pivot_offset = Vector2( 209.469, 88.086 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="TextureButton2"]
+margin_left = 71.1287
+margin_top = -107.089
+margin_right = 155.129
+margin_bottom = -93.0893
+rect_rotation = 15.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+margin_left = 168.757
+margin_top = 28.3009
+margin_right = 208.757
+margin_bottom = 68.3009
+rect_pivot_offset = Vector2( 209.469, 88.086 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="TextureButton3"]
+margin_left = -92.352
+margin_top = -53.5188
+margin_right = -8.35202
+margin_bottom = -39.5188
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+margin_left = -311.804
+margin_top = -274.184
+margin_right = -271.804
+margin_bottom = -234.184
+rect_pivot_offset = Vector2( 209.469, 88.086 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="TextureButton4"]
+margin_left = 130.765
+margin_top = 91.3676
+margin_right = 214.765
+margin_bottom = 105.368
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
